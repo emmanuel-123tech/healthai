@@ -1,0 +1,408 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Dark blue, white, and black brand color palette */
+  --background: oklch(1 0 0); /* Pure white */
+  --foreground: oklch(0.145 0 0); /* Near black */
+  --card: oklch(1 0 0); /* White */
+  --card-foreground: oklch(0.145 0 0); /* Near black */
+  --popover: oklch(1 0 0); /* White */
+  --popover-foreground: oklch(0.145 0 0); /* Near black */
+  --primary: oklch(0.35 0.08 250); /* Dark blue */
+  --primary-foreground: oklch(1 0 0); /* White */
+  --secondary: oklch(0.97 0 0); /* Light gray */
+  --secondary-foreground: oklch(0.145 0 0); /* Near black */
+  --muted: oklch(0.97 0 0); /* Very light gray */
+  --muted-foreground: oklch(0.556 0 0); /* Medium gray */
+  --accent: oklch(0.45 0.08 250); /* Medium blue accent */
+  --accent-foreground: oklch(1 0 0); /* White */
+  --destructive: oklch(0.577 0.245 27.325); /* Red for errors */
+  --destructive-foreground: oklch(1 0 0); /* White */
+  --border: oklch(0.922 0 0); /* Light gray border */
+  --input: oklch(0.922 0 0); /* Light gray input */
+  --ring: oklch(0.35 0.08 250); /* Dark blue ring */
+  --chart-1: oklch(0.35 0.08 250); /* Dark blue */
+  --chart-2: oklch(0.45 0.08 250); /* Medium blue */
+  --chart-3: oklch(0.55 0.08 250); /* Light blue */
+  --chart-4: oklch(0.145 0 0); /* Black */
+  --chart-5: oklch(0.556 0 0); /* Gray */
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0); /* Off-white */
+  --sidebar-foreground: oklch(0.145 0 0); /* Near black */
+  --sidebar-primary: oklch(0.35 0.08 250); /* Dark blue */
+  --sidebar-primary-foreground: oklch(1 0 0); /* White */
+  --sidebar-accent: oklch(0.97 0 0); /* Light gray */
+  --sidebar-accent-foreground: oklch(0.145 0 0); /* Near black */
+  --sidebar-border: oklch(0.922 0 0); /* Light gray */
+  --sidebar-ring: oklch(0.35 0.08 250); /* Dark blue */
+}
+
+.dark {
+  /* Rich dark theme with dark blue accents */
+  --background: oklch(0.145 0 0); /* Near black background */
+  --foreground: oklch(0.985 0 0); /* Off-white text */
+  --card: oklch(0.145 0 0); /* Dark card */
+  --card-foreground: oklch(0.985 0 0); /* Off-white */
+  --popover: oklch(0.145 0 0); /* Near black */
+  --popover-foreground: oklch(0.985 0 0); /* Off-white */
+  --primary: oklch(0.55 0.08 250); /* Lighter blue for dark mode */
+  --primary-foreground: oklch(1 0 0); /* White */
+  --secondary: oklch(0.269 0 0); /* Dark gray */
+  --secondary-foreground: oklch(0.985 0 0); /* Off-white */
+  --muted: oklch(0.269 0 0); /* Dark muted */
+  --muted-foreground: oklch(0.708 0 0); /* Light gray */
+  --accent: oklch(0.45 0.08 250); /* Medium blue accent */
+  --accent-foreground: oklch(1 0 0); /* White */
+  --destructive: oklch(0.396 0.141 25.723); /* Red */
+  --destructive-foreground: oklch(1 0 0); /* White */
+  --border: oklch(0.269 0 0); /* Dark border */
+  --input: oklch(0.269 0 0); /* Dark input */
+  --ring: oklch(0.55 0.08 250); /* Lighter blue ring */
+  --chart-1: oklch(0.55 0.08 250); /* Lighter blue */
+  --chart-2: oklch(0.65 0.08 250); /* Even lighter blue */
+  --chart-3: oklch(0.75 0.08 250); /* Very light blue */
+  --chart-4: oklch(0.708 0 0); /* Light gray */
+  --chart-5: oklch(0.556 0 0); /* Medium gray */
+  --sidebar: oklch(0.205 0 0); /* Dark sidebar */
+  --sidebar-foreground: oklch(0.985 0 0); /* Off-white */
+  --sidebar-primary: oklch(0.55 0.08 250); /* Lighter blue */
+  --sidebar-primary-foreground: oklch(1 0 0); /* White */
+  --sidebar-accent: oklch(0.269 0 0); /* Dark accent */
+  --sidebar-accent-foreground: oklch(0.985 0 0); /* Off-white */
+  --sidebar-border: oklch(0.269 0 0); /* Dark border */
+  --sidebar-ring: oklch(0.55 0.08 250); /* Lighter blue */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Add smooth scroll behavior and custom animations */
+@layer utilities {
+  /* Adding missing slide-out animation utilities */
+  .slide-out-to-left-52 {
+    animation: slideOutToLeft52 0.2s ease-out;
+  }
+
+  .slide-out-to-right-52 {
+    animation: slideOutToRight52 0.2s ease-out;
+  }
+
+  .slide-out-to-left {
+    animation: slideOutToLeft 0.2s ease-out;
+  }
+
+  .slide-out-to-right {
+    animation: slideOutToRight 0.2s ease-out;
+  }
+
+  .slide-out-to-top {
+    animation: slideOutToTop 0.2s ease-out;
+  }
+
+  .slide-out-to-bottom {
+    animation: slideOutToBottom 0.2s ease-out;
+  }
+
+  .slide-out-to-right-full {
+    animation: slideOutToRightFull 0.2s ease-out;
+  }
+
+  .slide-in-from-left-52 {
+    animation: slideInFromLeft52 0.2s ease-out;
+  }
+
+  .slide-in-from-right-52 {
+    animation: slideInFromRight52 0.2s ease-out;
+  }
+
+  .slide-in-from-left {
+    animation: slideInFromLeft 0.2s ease-out;
+  }
+
+  .slide-in-from-right {
+    animation: slideInFromRight 0.2s ease-out;
+  }
+
+  .slide-in-from-top {
+    animation: slideInFromTop 0.2s ease-out;
+  }
+
+  .slide-in-from-bottom {
+    animation: slideInFromBottom 0.2s ease-out;
+  }
+
+  .slide-in-from-top-full {
+    animation: slideInFromTopFull 0.2s ease-out;
+  }
+
+  .slide-in-from-bottom-full {
+    animation: slideInFromBottomFull 0.2s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Adding fadeInUp keyframe animation for scroll-triggered elements */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Adding gradient animation for hero text */
+  @keyframes gradient {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .dark .glass-effect {
+    background: rgba(24, 24, 32, 0.75);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Gradient overlays for depth */
+  .gradient-overlay {
+    position: relative;
+  }
+
+  .gradient-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(69, 162, 158, 0.1) 0%, rgba(130, 87, 229, 0.1) 100%);
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  /* Subtle hover effects */
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+  }
+
+  .dark .card-hover:hover {
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Adding keyframe definitions for slide animations */
+@keyframes slideOutToLeft52 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-13rem);
+  }
+}
+
+@keyframes slideOutToRight52 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(13rem);
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideOutToTop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideOutToBottom {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideOutToRightFull {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideInFromLeft52 {
+  from {
+    transform: translateX(-13rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight52 {
+  from {
+    transform: translateX(13rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTopFull {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottomFull {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
