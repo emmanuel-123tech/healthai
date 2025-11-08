@@ -1,0 +1,990 @@
+PHC_NAME,LGA,STATE,TOTAL_BEDS,TOTAL_WARDS,WELL_BUILT_STRUCTURE,HAS_DILAPIDATED_BUILDING,BROKEN_CEILING,DAMAGED_CHAIRS,LEAKING_ROOF,DAMAGED_DOOR,MONTH,MONTH_NUM,YEAR,YEAR_MONTH
+Phc Ikoneto,Odukpani,Cross River State,4.0,3.0,No,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Ekpri Obutong Health Care Centre,Bakassi,Cross River State,0.0,0.0,No,No,Yes,No,No,Yes,January,1,2025,2025-01
+Abakpa Primary Health Care Centre,Bakassi,Cross River State,0.0,6.0,No,Yes,Yes,No,Yes,Yes,January,1,2025,2025-01
+Phc Idomi,Yakurr,Cross River State,4.0,1.0,Yes,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Phc Ajere Beach Ekori,Yakurr,Cross River State,1.0,0.0,No,No,Yes,No,No,Yes,January,1,2025,2025-01
+Patapata Health Post,Yakurr,Cross River State,0.0,0.0,No,No,Yes,Yes,No,No,January,1,2025,2025-01
+Akarukpat Health Centre,Yakurr,Cross River State,1.0,0.0,No,No,Yes,Yes,Yes,No,January,1,2025,2025-01
+Efut Esighi Health Care Centre,Bakassi,Cross River State,0.0,0.0,No,Yes,No,Yes,No,Yes,January,1,2025,2025-01
+Primary Health Care Centre Ifiang Nsung,Bakassi,Cross River State,0.0,2.0,No,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Ikot Edem Odo Primary Health Centre,Akpabuyo,Cross River State,,4.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Primary Health Care Center Utuhu,Obanliku,Cross River State,,3.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Okomasi Primary Health Centre,Yakurr,Cross River State,5.0,3.0,Yes,No,No,Yes,Yes,No,January,1,2025,2025-01
+Primary Health Care Center Amana 1,Obanliku,Cross River State,5.0,4.0,Yes,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Abuekpo -Mpam Lagos Health Post,Ogoja,Cross River State,0.0,0.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Bayabo Primary Health Care Center,Obanliku,Cross River State,2.0,1.0,No,Yes,Yes,Yes,No,No,January,1,2025,2025-01
+Primary Health Care Center Bayuluga,Obanliku,Cross River State,2.0,1.0,No,Yes,Yes,Yes,No,Yes,January,1,2025,2025-01
+Abachor Health Post Abachor Igbeku,Ogoja,Cross River State,1.0,1.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Akpada Health Post,Yala,Cross River State,1.0,2.0,Yes,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Agba Health Post,Abi,Cross River State,1.0,1.0,No,Yes,Yes,No,Yes,No,January,1,2025,2025-01
+Primary Health Care Adadama,Abi,Cross River State,10.0,2.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Comprehensive Health Center,Abi,Cross River State,,4.0,Yes,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Balep Primary Health Care Center,Ikom,Cross River State,4.0,5.0,Yes,No,Yes,Yes,No,Yes,January,1,2025,2025-01
+Health Post: Abe Abeugo,Abi,Cross River State,3.0,2.0,Yes,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Nkwande Primary Health Care Center,Ikom,Cross River State,1.0,3.0,Yes,No,No,Yes,No,No,January,1,2025,2025-01
+Primary Health Care Center Bornima,Ikom,Cross River State,3.0,3.0,No,No,No,No,No,No,January,1,2025,2025-01
+Etomi Primary Health Care Center,Etung,Cross River State,10.0,1.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Primary Health Care Center Ekukunela 2,Ikom,Cross River State,1.0,1.0,Yes,Yes,No,No,Yes,No,January,1,2025,2025-01
+Comprehensive Health Center,Ikom,Cross River State,,5.0,Yes,No,No,Yes,No,No,January,1,2025,2025-01
+Mbarakom Primary Health Center,Akamkpa,Cross River State,,3.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Urban 2 Ukwel-Obudu Phc Atelakor,Obudu,Cross River State,,3.0,Yes,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Oberekai Health Post,Akamkpa,Cross River State,2.0,3.0,Yes,No,Yes,No,Yes,No,January,1,2025,2025-01
+Obudu Urban 1  Primary Health Care Center,Obudu,Cross River State,8.0,2.0,Yes,No,No,,,,January,1,2025,2025-01
+Model Primary Health Care Akorshie.Bendi 1,Obanliku,Cross River State,,4.0,Yes,Yes,Yes,No,Yes,Yes,January,1,2025,2025-01
+Health Center Okarara,Akamkpa,Cross River State,2.0,2.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Nyaje Primary Health Center,Akamkpa,Cross River State,5.0,4.0,Yes,No,No,Yes,No,Yes,January,1,2025,2025-01
+Ekpene-Ikot Umoh,Akpabuyo,Cross River State,0.0,1.0,Yes,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Phc  Ajassor,Etung,Cross River State,9.0,5.0,Yes,No,No,,,,January,1,2025,2025-01
+Agbokim Phc,Etung,Cross River State,,5.0,Yes,No,No,Yes,Yes,Yes,January,1,2025,2025-01
+Abia Phc,Etung,Cross River State,8.0,5.0,Yes,No,Yes,No,Yes,No,January,1,2025,2025-01
+Nigerian Custom Medical Centre,Calabar Municipal,Cross River State,7.0,3.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Akim Primary Healthcare Centre,Calabar Municipal,Cross River State,5.0,1.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Primary Healthcare Center Ediba,Calabar Municipal,Cross River State,7.0,8.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Primary Healthcare Centre Ekorinim,Calabar Municipal,Cross River State,6.0,2.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Phc Abijang,Etung,Cross River State,6.0,3.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Atakpa Health Post,Calabar South,Cross River State,6.0,11.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Nysc Healthcare Centre Atu Street,Calabar South,Cross River State,4.0,3.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Primary Healthcare Center Eyamba,Calabar South,Cross River State,3.0,3.0,Yes,Yes,Yes,No,No,No,January,1,2025,2025-01
+Bogobiri Health Post,Calabar South,Cross River State,0.0,1.0,No,No,No,No,No,No,January,1,2025,2025-01
+Phc Abenyo,Calabar Municipal,Cross River State,1.0,5.0,Yes,No,Yes,No,No,Yes,January,1,2025,2025-01
+Agiga Health Post Okpeche,Bekwarra,Cross River State,3.0,1.0,No,No,Yes,No,Yes,No,January,1,2025,2025-01
+Abuochiche Inland Health Post,Bekwarra,Cross River State,1.0,3.0,Yes,No,Yes,No,No,No,January,1,2025,2025-01
+Imaya Health Post,Bekwarra,Cross River State,1.0,1.0,No,No,Yes,No,No,No,January,1,2025,2025-01
+Ichogodo Health Post,Bekwarra,Cross River State,2.0,3.0,No,No,Yes,Yes,No,Yes,January,1,2025,2025-01
+Ugaga Phc Yala,Yala,Cross River State,4.0,2.0,Yes,No,No,Yes,No,Yes,January,1,2025,2025-01
+Eno Ipoule Phc,Yala,Cross River State,7.0,3.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Phc Ijiraga,Yala,Cross River State,9.0,3.0,Yes,No,No,Yes,Yes,No,January,1,2025,2025-01
+Comprehensive Health Center Wanihem,Yala,Cross River State,,1.0,Yes,Yes,No,Yes,No,No,January,1,2025,2025-01
+Phc  Mfuma  Ikogo,Yala,Cross River State,10.0,2.0,Yes,Yes,Yes,,,,January,1,2025,2025-01
+Nyomebe Health Post,Akpabuyo,Cross River State,0.0,0.0,No,Yes,No,No,No,No,January,1,2025,2025-01
+Igonigoni Health Post,Abi,Cross River State,2.0,1.0,Yes,No,No,Yes,No,No,January,1,2025,2025-01
+Ebom Health Centre,Abi,Cross River State,,1.0,Yes,No,No,Yes,Yes,Yes,January,1,2025,2025-01
+Owal Health Post,Akamkpa,Cross River State,3.0,1.0,No,No,No,No,No,No,January,1,2025,2025-01
+Kubong Bette primary Health post ,Obudu,Cross River state,3.0,2.0,No,Yes,Yes,,,,January,1,2025,2025-01
+Begiagba health centre,Obanliku,Cross River state,8.0,1.0,Yes,Yes,No,No,No,Yes,January,1,2025,2025-01
+Primary Health centre Bayaga,Obanliku,Cross River state,8.0,4.0,No,No,Yes,Yes,No,Yes,January,1,2025,2025-01
+"Busi 3, primary health centre",Obanliku,Cross River state,2.0,3.0,Yes,Yes,Yes,No,Yes,Yes,January,1,2025,2025-01
+Kakwe health post ,Obanliku,Cross River state,2.0,2.0,No,No,Yes,,,,January,1,2025,2025-01
+Adadang health centre ,Obanliku,Cross River state,1.0,,No,Yes,Yes,,,,January,1,2025,2025-01
+Bebua primary health centre ,Obudu,Cross River state,3.0,3.0,Yes,Yes,No,,,,January,1,2025,2025-01
+Betukwel health centre ,Obudu,Cross River state,2.0,4.0,No,Yes,Yes,,,,January,1,2025,2025-01
+Alege primary health centre ,Obudu,Cross River state,5.0,2.0,Yes,Yes,Yes,,,,January,1,2025,2025-01
+Kagbang health centre ,Obudu,Cross River state,1.0,1.0,No,No,Yes,,,,January,1,2025,2025-01
+Achibang health centre ,Bekwara,Cross River state,1.0,2.0,No,No,No,,,,January,1,2025,2025-01
+Ebagang health centre ,Bekwara,Cross River state,8.0,3.0,Yes,Yes,Yes,,,,January,1,2025,2025-01
+Agim health post ,Bekwara,Cross River state,1.0,2.0,No,No,No,,,,January,1,2025,2025-01
+Ijibor health centre ,Bekwara,Cross River state,8.0,2.0,Yes,No,No,,,,January,1,2025,2025-01
+Adagom health centre ,Ogoja,Cross River state,1.0,,No,Yes,No,,,,January,1,2025,2025-01
+Idum model primary health centre ,Ogoja,Cross River state,8.0,2.0,No,Yes,Yes,,,,January,1,2025,2025-01
+"Mma Effa PHC, Akamkpa Town",Akamkpa,Cross River state,3.0,2.0,Yes,Yes,Yes,No,Yes,Yes,January,1,2025,2025-01
+Ayeabam Health Centre,Ayeabam Village,Cross River state,1.0,1.0,No,Yes,No,No,Yes,Yes,January,1,2025,2025-01
+Akwa Ibami Health Centre,Akamkpa local government area,Cross River state,0.0,,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Ibil Primary health centre -Nkum Irede ward,Ogoja,Cross River state,,3.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Adeni health post ,Yala,Cross River state,,2.0,Yes,Yes,Yes,,,,January,1,2025,2025-01
+Iyeche Itekpa health post ,Yala,Cross River state,1.0,,No,Yes,Yes,,,,January,1,2025,2025-01
+Adiabo-Okurikang Primary Healthcare Centre,Odukpani,Cross River state,9.0,3.0,No,Yes,No,No,No,No,January,1,2025,2025-01
+Adiabo Ikot Otu Ibuot Health Centre,Odukpani,Cross River state,3.0,1.0,Yes,No,No,Yes,No,No,January,1,2025,2025-01
+Ijiman Primary Health Centre Ugep,Yakurr,Cross River state,4.0,1.0,No,No,No,No,No,No,January,1,2025,2025-01
+"Yenon Primary Health Centre, Ikpakapit",Yakurr,Cross River state,6.0,2.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Ekori Comprehensive Health Centre,Yakurr,Cross River state,,1.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Obat Ogor health centre,Yala,Cross River state,4.0,2.0,No,No,No,No,Yes,No,January,1,2025,2025-01
+Ndohale health centre ,Yala,Cross River state,4.0,1.0,No,Yes,Yes,,,,January,1,2025,2025-01
+Anyugbe Igede PHC,Yala,Cross River state,6.0,4.0,No,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Wanokom primary health centre,Yala,Cross River state,,2.0,No,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Ebo- Woleche primary health centre ,Yala,Cross River state,3.0,2.0,Yes,Yes,Yes,,,,January,1,2025,2025-01
+Ovokwa Health Centre,Obubra,Cross River state,4.0,2.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Ujokom health post ,Yala,Cross River state,2.0,2.0,Yes,No,Yes,,,,January,1,2025,2025-01
+Bituol health post ,Yala,Cross River state,2.0,1.0,No,Yes,Yes,,,,January,1,2025,2025-01
+Ababene PHC,Ababene in Obubra,Cross River state,10.0,2.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Idundu PHC,Akpabuyo,Cross River state,3.0,1.0,Yes,No,No,Yes,Yes,Yes,January,1,2025,2025-01
+Igbekurekor Primary health centre ,Yala,Cross River state,1.0,2.0,No,No,Yes,,,,January,1,2025,2025-01
+Akreha primary health centre ,Yala,Cross River state,4.0,1.0,No,Yes,Yes,,,,January,1,2025,2025-01
+Egbeja primary health post ,Yala,Cross River state,1.0,,No,Yes,Yes,,,,January,1,2025,2025-01
+Esuk Idebe Health Post,Akpabuyo,Cross River state,1.0,1.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Winnimba health centre ,Ogoja,Cross River state,2.0,2.0,No,No,No,,,,January,1,2025,2025-01
+Akam health post ,Ikom,Cross River state,2.0,2.0,Yes,No,Yes,,,,January,1,2025,2025-01
+Other health post ,Ikom,Cross River state,1.0,1.0,No,No,Yes,,,,January,1,2025,2025-01
+Atimaka health post ,Ikom,Cross River state,2.0,,No,No,Yes,,,,January,1,2025,2025-01
+Eganga health post ,Ikom,Cross River state,1.0,1.0,Yes,No,No,,,,January,1,2025,2025-01
+Akorofono health post ,Ikom,Cross River state,2.0,2.0,Yes,Yes,No,,,,January,1,2025,2025-01
+Iyamitet Health Centre,Obubra,Cross River state,5.0,1.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Abo-Ebam Primary Health Centre,Boki,Cross River state,9.0,2.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Abija Health Post,Boki,Cross River state,2.0,1.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Bajiki Health Centre,Boki,Cross River state,6.0,2.0,No,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Nsofang Primary Healthcare Centre,Etung,Cross River state,4.0,2.0,Yes,Yes,No,Yes,Yes,No,January,1,2025,2025-01
+Akarim Health Post,Etung,Cross River state,1.0,1.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Bendeghe Ekiem Comprehensive Healthcare Centre,Etung,Cross River state,8.0,1.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Ikot Enebong Health Centre,Calabar Municipality,Cross River state,4.0,4.0,Yes,No,No,No,Yes,No,January,1,2025,2025-01
+Esuk Otu Health Post,Calabar Municipality,Cross River state,1.0,1.0,No,Yes,Yes,Yes,No,Yes,January,1,2025,2025-01
+Iban Amanso Health Post,Calabar Municipality,Cross River state,1.0,1.0,No,Yes,Yes,Yes,No,Yes,January,1,2025,2025-01
+Big Qua Primary Health Centre,Calabar Municipality,Cross River state,6.0,6.0,Yes,No,No,No,Yes,Yes,January,1,2025,2025-01
+Akani Esuk Primary Healthcare Centre,Calabar Municipality,Cross River state,2.0,1.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Edgerly Primary Healthcare Centre,Calabar Municipality,Cross River state,1.0,1.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Goldie Health Post,Calabar South,Cross River state,0.0,1.0,No,No,No,No,No,No,January,1,2025,2025-01
+Ikot Otu Abasi Primary Health Centre,Akpabuyo,Cross River state,0.0,,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Ikot Anasua Health Post,Akpabuyo,Cross River state,0.0,,Yes,No,No,Yes,No,No,January,1,2025,2025-01
+Ikot Inwang PHC,Bakassi,Cross River state,1.0,,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Nsidung PHC,Bakassi in,Cross River state,2.0,1.0,Yes,No,Yes,Yes,Yes,No,January,1,2025,2025-01
+Esit Ikot Nsa Ewa health post,Bakassi,Cross River state,1.0,1.0,Yes,No,Yes,Yes,Yes,No,January,1,2025,2025-01
+Agbara Health Centre (Ekureku 2),Abi,Cross River state,,2.0,Yes,No,No,No,No,No,January,1,2025,2025-01
+Anong/Ezeke PHC,Abi Local Government Area,Cross River state,6.0,2.0,No,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Ebor Health Post,Abi,Cross River state,1.0,,No,Yes,Yes,Yes,Yes,No,January,1,2025,2025-01
+Biakpan PHC,Biase,Cross River state,4.0,2.0,Yes,No,Yes,No,Yes,No,January,1,2025,2025-01
+Abanwan PHC,Biase,Cross River state,7.0,2.0,Yes,Yes,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Agwagune PHC,Biase,Cross River state,8.0,2.0,Yes,No,Yes,Yes,Yes,No,January,1,2025,2025-01
+Umon Island Primary Health Centre,Biase,Cross River state,4.0,1.0,Yes,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Kutiang 2 Health Post,Obudu,Cross River state,3.0,,No,No,Yes,Yes,Yes,Yes,January,1,2025,2025-01
+Name of Primary Health Center,,State of PHC,,,,,,,,,January,1,2025,2025-01
+Name of Primary Health Center,,State of PHC,,,,,,,,,January,1,2025,2025-01
+Name of Primary Health Center,,State of PHC,,,,,,,,,January,1,2025,2025-01
+Name of Primary Health Center,,State of PHC,,,,,,,,,January,1,2025,2025-01
+Name of Primary Health Center,,State of PHC,,,,,,,,,January,1,2025,2025-01
+Name of Primary Health Center,,State of PHC,,,,,,,,,January,1,2025,2025-01
+Phc Ikoneto,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ikoneto,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ikoneto,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ikoneto,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ikoneto,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ikoneto,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Ekpri Obutong Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Ekpri Obutong Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Ekpri Obutong Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Ekpri Obutong Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Ekpri Obutong Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Ekpri Obutong Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Abakpa Primary Health Care Centre,,Cross River State,,6.0,,,,,,,January,1,2025,2025-01
+Abakpa Primary Health Care Centre,,Cross River State,,6.0,,,,,,,January,1,2025,2025-01
+Abakpa Primary Health Care Centre,,Cross River State,,6.0,,,,,,,January,1,2025,2025-01
+Abakpa Primary Health Care Centre,,Cross River State,,6.0,,,,,,,January,1,2025,2025-01
+Abakpa Primary Health Care Centre,,Cross River State,,6.0,,,,,,,January,1,2025,2025-01
+Abakpa Primary Health Care Centre,,Cross River State,,6.0,,,,,,,January,1,2025,2025-01
+Phc Idomi,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc Idomi,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc Idomi,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc Idomi,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc Idomi,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc Idomi,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc Ajere Beach Ekori,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Phc Ajere Beach Ekori,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Phc Ajere Beach Ekori,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Phc Ajere Beach Ekori,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Phc Ajere Beach Ekori,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Phc Ajere Beach Ekori,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Patapata Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Patapata Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Patapata Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Patapata Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Patapata Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Patapata Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Akarukpat Health Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Akarukpat Health Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Akarukpat Health Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Akarukpat Health Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Akarukpat Health Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Akarukpat Health Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Efut Esighi Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Efut Esighi Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Efut Esighi Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Efut Esighi Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Efut Esighi Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Efut Esighi Health Care Centre,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Centre Ifiang Nsung,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Centre Ifiang Nsung,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Centre Ifiang Nsung,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Centre Ifiang Nsung,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Centre Ifiang Nsung,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Centre Ifiang Nsung,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Ikot Edem Odo Primary Health Centre,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Edem Odo Primary Health Centre,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Edem Odo Primary Health Centre,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Edem Odo Primary Health Centre,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Edem Odo Primary Health Centre,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Edem Odo Primary Health Centre,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Utuhu,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Utuhu,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Utuhu,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Utuhu,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Utuhu,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Utuhu,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Okomasi Primary Health Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Okomasi Primary Health Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Okomasi Primary Health Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Okomasi Primary Health Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Okomasi Primary Health Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Okomasi Primary Health Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Amana 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Amana 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Amana 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Amana 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Amana 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Amana 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Abuekpo -Mpam Lagos Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Abuekpo -Mpam Lagos Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Abuekpo -Mpam Lagos Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Abuekpo -Mpam Lagos Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Abuekpo -Mpam Lagos Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Abuekpo -Mpam Lagos Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Bayabo Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bayabo Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bayabo Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bayabo Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bayabo Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bayabo Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bayuluga,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bayuluga,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bayuluga,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bayuluga,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bayuluga,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bayuluga,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Abachor Health Post Abachor Igbeku,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Abachor Health Post Abachor Igbeku,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Abachor Health Post Abachor Igbeku,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Abachor Health Post Abachor Igbeku,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Abachor Health Post Abachor Igbeku,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Abachor Health Post Abachor Igbeku,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Akpada Health Post,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Akpada Health Post,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Akpada Health Post,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Akpada Health Post,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Akpada Health Post,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Akpada Health Post,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Agba Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agba Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agba Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agba Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agba Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agba Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Adadama,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Adadama,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Adadama,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Adadama,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Adadama,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Adadama,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Balep Primary Health Care Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Balep Primary Health Care Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Balep Primary Health Care Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Balep Primary Health Care Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Balep Primary Health Care Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Balep Primary Health Care Center,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Health Post: Abe Abeugo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Post: Abe Abeugo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Post: Abe Abeugo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Post: Abe Abeugo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Post: Abe Abeugo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Post: Abe Abeugo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Nkwande Primary Health Care Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nkwande Primary Health Care Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nkwande Primary Health Care Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nkwande Primary Health Care Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nkwande Primary Health Care Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nkwande Primary Health Care Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bornima,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bornima,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bornima,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bornima,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bornima,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Bornima,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Etomi Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Etomi Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Etomi Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Etomi Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Etomi Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Etomi Primary Health Care Center,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Ekukunela 2,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Ekukunela 2,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Ekukunela 2,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Ekukunela 2,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Ekukunela 2,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health Care Center Ekukunela 2,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Mbarakom Primary Health Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Mbarakom Primary Health Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Mbarakom Primary Health Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Mbarakom Primary Health Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Mbarakom Primary Health Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Mbarakom Primary Health Center,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Urban 2 Ukwel-Obudu Phc Atelakor,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Urban 2 Ukwel-Obudu Phc Atelakor,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Urban 2 Ukwel-Obudu Phc Atelakor,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Urban 2 Ukwel-Obudu Phc Atelakor,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Urban 2 Ukwel-Obudu Phc Atelakor,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Urban 2 Ukwel-Obudu Phc Atelakor,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Oberekai Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Oberekai Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Oberekai Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Oberekai Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Oberekai Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Oberekai Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Obudu Urban 1  Primary Health Care Center,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Obudu Urban 1  Primary Health Care Center,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Obudu Urban 1  Primary Health Care Center,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Obudu Urban 1  Primary Health Care Center,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Obudu Urban 1  Primary Health Care Center,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Obudu Urban 1  Primary Health Care Center,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Model Primary Health Care Akorshie.Bendi 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Model Primary Health Care Akorshie.Bendi 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Model Primary Health Care Akorshie.Bendi 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Model Primary Health Care Akorshie.Bendi 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Model Primary Health Care Akorshie.Bendi 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Model Primary Health Care Akorshie.Bendi 1,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Health Center Okarara,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Center Okarara,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Center Okarara,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Center Okarara,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Center Okarara,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Health Center Okarara,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Nyaje Primary Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Nyaje Primary Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Nyaje Primary Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Nyaje Primary Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Nyaje Primary Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Nyaje Primary Health Center,,Cross River State,,4.0,,,,,,,January,1,2025,2025-01
+Ekpene-Ikot Umoh,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ekpene-Ikot Umoh,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ekpene-Ikot Umoh,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ekpene-Ikot Umoh,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ekpene-Ikot Umoh,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ekpene-Ikot Umoh,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc  Ajassor,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc  Ajassor,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc  Ajassor,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc  Ajassor,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc  Ajassor,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc  Ajassor,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Agbokim Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Agbokim Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Agbokim Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Agbokim Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Agbokim Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Agbokim Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Abia Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Abia Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Abia Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Abia Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Abia Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Abia Phc,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Nigerian Custom Medical Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nigerian Custom Medical Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nigerian Custom Medical Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nigerian Custom Medical Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nigerian Custom Medical Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nigerian Custom Medical Centre,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Akim Primary Healthcare Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Akim Primary Healthcare Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Akim Primary Healthcare Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Akim Primary Healthcare Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Akim Primary Healthcare Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Akim Primary Healthcare Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Ediba,,Cross River State,,8.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Ediba,,Cross River State,,8.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Ediba,,Cross River State,,8.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Ediba,,Cross River State,,8.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Ediba,,Cross River State,,8.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Ediba,,Cross River State,,8.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Centre Ekorinim,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Centre Ekorinim,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Centre Ekorinim,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Centre Ekorinim,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Centre Ekorinim,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Centre Ekorinim,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Phc Abijang,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Abijang,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Abijang,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Abijang,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Abijang,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Abijang,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Atakpa Health Post,,Cross River State,,11.0,,,,,,,January,1,2025,2025-01
+Atakpa Health Post,,Cross River State,,11.0,,,,,,,January,1,2025,2025-01
+Atakpa Health Post,,Cross River State,,11.0,,,,,,,January,1,2025,2025-01
+Atakpa Health Post,,Cross River State,,11.0,,,,,,,January,1,2025,2025-01
+Atakpa Health Post,,Cross River State,,11.0,,,,,,,January,1,2025,2025-01
+Atakpa Health Post,,Cross River State,,11.0,,,,,,,January,1,2025,2025-01
+Nysc Healthcare Centre Atu Street,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nysc Healthcare Centre Atu Street,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nysc Healthcare Centre Atu Street,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nysc Healthcare Centre Atu Street,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nysc Healthcare Centre Atu Street,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Nysc Healthcare Centre Atu Street,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Eyamba,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Eyamba,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Eyamba,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Eyamba,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Eyamba,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Primary Healthcare Center Eyamba,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Bogobiri Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bogobiri Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bogobiri Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bogobiri Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bogobiri Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Bogobiri Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc Abenyo,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc Abenyo,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc Abenyo,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc Abenyo,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc Abenyo,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Phc Abenyo,,Cross River State,,5.0,,,,,,,January,1,2025,2025-01
+Agiga Health Post Okpeche,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agiga Health Post Okpeche,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agiga Health Post Okpeche,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agiga Health Post Okpeche,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agiga Health Post Okpeche,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Agiga Health Post Okpeche,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Abuochiche Inland Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Abuochiche Inland Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Abuochiche Inland Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Abuochiche Inland Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Abuochiche Inland Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Abuochiche Inland Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Imaya Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Imaya Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Imaya Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Imaya Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Imaya Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Imaya Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ichogodo Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Ichogodo Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Ichogodo Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Ichogodo Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Ichogodo Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Ichogodo Health Post,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Ugaga Phc Yala,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Ugaga Phc Yala,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Ugaga Phc Yala,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Ugaga Phc Yala,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Ugaga Phc Yala,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Ugaga Phc Yala,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Eno Ipoule Phc,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Eno Ipoule Phc,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Eno Ipoule Phc,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Eno Ipoule Phc,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Eno Ipoule Phc,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Eno Ipoule Phc,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ijiraga,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ijiraga,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ijiraga,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ijiraga,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ijiraga,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Phc Ijiraga,,Cross River State,,3.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center Wanihem,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center Wanihem,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center Wanihem,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center Wanihem,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center Wanihem,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Comprehensive Health Center Wanihem,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Phc  Mfuma  Ikogo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Phc  Mfuma  Ikogo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Phc  Mfuma  Ikogo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Phc  Mfuma  Ikogo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Phc  Mfuma  Ikogo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Phc  Mfuma  Ikogo,,Cross River State,,2.0,,,,,,,January,1,2025,2025-01
+Nyomebe Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Nyomebe Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Nyomebe Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Nyomebe Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Nyomebe Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Nyomebe Health Post,,Cross River State,,0.0,,,,,,,January,1,2025,2025-01
+Igonigoni Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Igonigoni Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Igonigoni Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Igonigoni Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Igonigoni Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Igonigoni Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ebom Health Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ebom Health Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ebom Health Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ebom Health Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ebom Health Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Ebom Health Centre,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Owal Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Owal Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Owal Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Owal Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Owal Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Owal Health Post,,Cross River State,,1.0,,,,,,,January,1,2025,2025-01
+Kubong Bette primary Health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kubong Bette primary Health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kubong Bette primary Health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kubong Bette primary Health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kubong Bette primary Health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kubong Bette primary Health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Begiagba health centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Begiagba health centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Begiagba health centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Begiagba health centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Begiagba health centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Begiagba health centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Primary Health centre Bayaga,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health centre Bayaga,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health centre Bayaga,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health centre Bayaga,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health centre Bayaga,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Primary Health centre Bayaga,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+"Busi 3, primary health centre",,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+"Busi 3, primary health centre",,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+"Busi 3, primary health centre",,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+"Busi 3, primary health centre",,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+"Busi 3, primary health centre",,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+"Busi 3, primary health centre",,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Kakwe health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kakwe health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kakwe health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kakwe health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kakwe health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kakwe health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Adadang health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adadang health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adadang health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adadang health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adadang health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adadang health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Bebua primary health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Bebua primary health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Bebua primary health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Bebua primary health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Bebua primary health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Bebua primary health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Betukwel health centre ,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Betukwel health centre ,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Betukwel health centre ,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Betukwel health centre ,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Betukwel health centre ,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Betukwel health centre ,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Alege primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Alege primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Alege primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Alege primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Alege primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Alege primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Kagbang health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Kagbang health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Kagbang health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Kagbang health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Kagbang health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Kagbang health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Achibang health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Achibang health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Achibang health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Achibang health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Achibang health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Achibang health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ebagang health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ebagang health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ebagang health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ebagang health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ebagang health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ebagang health centre ,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Agim health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agim health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agim health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agim health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agim health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agim health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ijibor health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ijibor health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ijibor health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ijibor health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ijibor health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ijibor health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Adagom health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adagom health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adagom health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adagom health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adagom health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adagom health centre ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Idum model primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Idum model primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Idum model primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Idum model primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Idum model primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Idum model primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Mma Effa PHC, Akamkpa Town",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Mma Effa PHC, Akamkpa Town",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Mma Effa PHC, Akamkpa Town",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Mma Effa PHC, Akamkpa Town",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Mma Effa PHC, Akamkpa Town",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Mma Effa PHC, Akamkpa Town",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ayeabam Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ayeabam Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ayeabam Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ayeabam Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ayeabam Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ayeabam Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akwa Ibami Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Akwa Ibami Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Akwa Ibami Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Akwa Ibami Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Akwa Ibami Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Akwa Ibami Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ibil Primary health centre -Nkum Irede ward,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ibil Primary health centre -Nkum Irede ward,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ibil Primary health centre -Nkum Irede ward,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ibil Primary health centre -Nkum Irede ward,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ibil Primary health centre -Nkum Irede ward,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Ibil Primary health centre -Nkum Irede ward,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Adeni health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Adeni health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Adeni health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Adeni health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Adeni health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Adeni health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Iyeche Itekpa health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Iyeche Itekpa health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Iyeche Itekpa health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Iyeche Itekpa health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Iyeche Itekpa health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Iyeche Itekpa health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Adiabo-Okurikang Primary Healthcare Centre,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Adiabo-Okurikang Primary Healthcare Centre,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Adiabo-Okurikang Primary Healthcare Centre,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Adiabo-Okurikang Primary Healthcare Centre,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Adiabo-Okurikang Primary Healthcare Centre,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Adiabo-Okurikang Primary Healthcare Centre,,Cross River state,,3.0,,,,,,,January,1,2025,2025-01
+Adiabo Ikot Otu Ibuot Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Adiabo Ikot Otu Ibuot Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Adiabo Ikot Otu Ibuot Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Adiabo Ikot Otu Ibuot Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Adiabo Ikot Otu Ibuot Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Adiabo Ikot Otu Ibuot Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ijiman Primary Health Centre Ugep,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ijiman Primary Health Centre Ugep,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ijiman Primary Health Centre Ugep,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ijiman Primary Health Centre Ugep,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ijiman Primary Health Centre Ugep,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ijiman Primary Health Centre Ugep,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+"Yenon Primary Health Centre, Ikpakapit",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Yenon Primary Health Centre, Ikpakapit",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Yenon Primary Health Centre, Ikpakapit",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Yenon Primary Health Centre, Ikpakapit",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Yenon Primary Health Centre, Ikpakapit",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+"Yenon Primary Health Centre, Ikpakapit",,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ekori Comprehensive Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ekori Comprehensive Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ekori Comprehensive Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ekori Comprehensive Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ekori Comprehensive Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ekori Comprehensive Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Obat Ogor health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Obat Ogor health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Obat Ogor health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Obat Ogor health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Obat Ogor health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Obat Ogor health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ndohale health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ndohale health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ndohale health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ndohale health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ndohale health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ndohale health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Anyugbe Igede PHC,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Anyugbe Igede PHC,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Anyugbe Igede PHC,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Anyugbe Igede PHC,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Anyugbe Igede PHC,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Anyugbe Igede PHC,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Wanokom primary health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Wanokom primary health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Wanokom primary health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Wanokom primary health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Wanokom primary health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Wanokom primary health centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ebo- Woleche primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ebo- Woleche primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ebo- Woleche primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ebo- Woleche primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ebo- Woleche primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ebo- Woleche primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ovokwa Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ovokwa Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ovokwa Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ovokwa Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ovokwa Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ovokwa Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ujokom health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ujokom health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ujokom health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ujokom health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ujokom health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ujokom health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Bituol health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bituol health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bituol health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bituol health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bituol health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bituol health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ababene PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ababene PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ababene PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ababene PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ababene PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ababene PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Idundu PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Idundu PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Idundu PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Idundu PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Idundu PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Idundu PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Igbekurekor Primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Igbekurekor Primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Igbekurekor Primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Igbekurekor Primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Igbekurekor Primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Igbekurekor Primary health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akreha primary health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akreha primary health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akreha primary health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akreha primary health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akreha primary health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akreha primary health centre ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Egbeja primary health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Egbeja primary health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Egbeja primary health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Egbeja primary health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Egbeja primary health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Egbeja primary health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Esuk Idebe Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Idebe Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Idebe Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Idebe Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Idebe Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Idebe Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Winnimba health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Winnimba health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Winnimba health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Winnimba health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Winnimba health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Winnimba health centre ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akam health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akam health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akam health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akam health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akam health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akam health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Other health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Other health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Other health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Other health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Other health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Other health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Atimaka health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Atimaka health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Atimaka health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Atimaka health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Atimaka health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Atimaka health post ,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Eganga health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Eganga health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Eganga health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Eganga health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Eganga health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Eganga health post ,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akorofono health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akorofono health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akorofono health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akorofono health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akorofono health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akorofono health post ,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Iyamitet Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iyamitet Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iyamitet Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iyamitet Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iyamitet Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iyamitet Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Abo-Ebam Primary Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abo-Ebam Primary Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abo-Ebam Primary Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abo-Ebam Primary Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abo-Ebam Primary Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abo-Ebam Primary Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abija Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Abija Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Abija Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Abija Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Abija Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Abija Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bajiki Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Bajiki Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Bajiki Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Bajiki Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Bajiki Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Bajiki Health Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Nsofang Primary Healthcare Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Nsofang Primary Healthcare Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Nsofang Primary Healthcare Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Nsofang Primary Healthcare Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Nsofang Primary Healthcare Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Nsofang Primary Healthcare Centre,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Akarim Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akarim Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akarim Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akarim Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akarim Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akarim Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bendeghe Ekiem Comprehensive Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bendeghe Ekiem Comprehensive Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bendeghe Ekiem Comprehensive Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bendeghe Ekiem Comprehensive Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bendeghe Ekiem Comprehensive Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Bendeghe Ekiem Comprehensive Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ikot Enebong Health Centre,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Enebong Health Centre,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Enebong Health Centre,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Enebong Health Centre,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Enebong Health Centre,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Ikot Enebong Health Centre,,Cross River state,,4.0,,,,,,,January,1,2025,2025-01
+Esuk Otu Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Otu Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Otu Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Otu Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Otu Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esuk Otu Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iban Amanso Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iban Amanso Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iban Amanso Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iban Amanso Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iban Amanso Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Iban Amanso Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Big Qua Primary Health Centre,,Cross River state,,6.0,,,,,,,January,1,2025,2025-01
+Big Qua Primary Health Centre,,Cross River state,,6.0,,,,,,,January,1,2025,2025-01
+Big Qua Primary Health Centre,,Cross River state,,6.0,,,,,,,January,1,2025,2025-01
+Big Qua Primary Health Centre,,Cross River state,,6.0,,,,,,,January,1,2025,2025-01
+Big Qua Primary Health Centre,,Cross River state,,6.0,,,,,,,January,1,2025,2025-01
+Big Qua Primary Health Centre,,Cross River state,,6.0,,,,,,,January,1,2025,2025-01
+Akani Esuk Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akani Esuk Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akani Esuk Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akani Esuk Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akani Esuk Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Akani Esuk Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Edgerly Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Edgerly Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Edgerly Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Edgerly Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Edgerly Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Edgerly Primary Healthcare Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Goldie Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Goldie Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Goldie Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Goldie Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Goldie Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Goldie Health Post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Ikot Otu Abasi Primary Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Otu Abasi Primary Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Otu Abasi Primary Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Otu Abasi Primary Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Otu Abasi Primary Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Otu Abasi Primary Health Centre,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Anasua Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Anasua Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Anasua Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Anasua Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Anasua Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Anasua Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Inwang PHC,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Inwang PHC,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Inwang PHC,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Inwang PHC,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Inwang PHC,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ikot Inwang PHC,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Nsidung PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Nsidung PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Nsidung PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Nsidung PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Nsidung PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Nsidung PHC,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esit Ikot Nsa Ewa health post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esit Ikot Nsa Ewa health post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esit Ikot Nsa Ewa health post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esit Ikot Nsa Ewa health post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esit Ikot Nsa Ewa health post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Esit Ikot Nsa Ewa health post,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Agbara Health Centre (Ekureku 2),,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agbara Health Centre (Ekureku 2),,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agbara Health Centre (Ekureku 2),,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agbara Health Centre (Ekureku 2),,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agbara Health Centre (Ekureku 2),,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agbara Health Centre (Ekureku 2),,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Anong/Ezeke PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Anong/Ezeke PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Anong/Ezeke PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Anong/Ezeke PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Anong/Ezeke PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Anong/Ezeke PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Ebor Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ebor Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ebor Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ebor Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ebor Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Ebor Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Biakpan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Biakpan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Biakpan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Biakpan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Biakpan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Biakpan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abanwan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abanwan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abanwan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abanwan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abanwan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Abanwan PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agwagune PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agwagune PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agwagune PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agwagune PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agwagune PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Agwagune PHC,,Cross River state,,2.0,,,,,,,January,1,2025,2025-01
+Umon Island Primary Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Umon Island Primary Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Umon Island Primary Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Umon Island Primary Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Umon Island Primary Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Umon Island Primary Health Centre,,Cross River state,,1.0,,,,,,,January,1,2025,2025-01
+Kutiang 2 Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Kutiang 2 Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Kutiang 2 Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Kutiang 2 Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Kutiang 2 Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Kutiang 2 Health Post,,Cross River state,,,,,,,,,January,1,2025,2025-01
+Obudu Urban 1 Primary Health Care Center,Obudu,Cross River State,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Phc Ajassor,Etung,Cross River State,,,,,,No,No,No,January,1,2025,2025-01
+Phc Mfuma Ikogo,Yala,Cross River State,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Kubong Bette primary Health post,Obudu,Cross River state,,,,,,No,Yes,Yes,January,1,2025,2025-01
+Kakwe health post,Obanliku,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Adadang health centre,Obanliku,Cross River state,,,,,,No,No,Yes,January,1,2025,2025-01
+Bebua primary health centre,Obudu,Cross River state,,,,,,Yes,No,Yes,January,1,2025,2025-01
+Betukwel health centre,Obudu,Cross River state,,,,,,No,No,Yes,January,1,2025,2025-01
+Alege primary health centre,Obudu,Cross River state,,,,,,No,Yes,Yes,January,1,2025,2025-01
+Kagbang health centre,Obudu,Cross River state,,,,,,No,No,Yes,January,1,2025,2025-01
+Achibang health centre,Bekwara,Cross River state,,,,,,Yes,No,Yes,January,1,2025,2025-01
+Ebagang health centre,Bekwara,Cross River state,,,,,,Yes,Yes,No,January,1,2025,2025-01
+Agim health post,Bekwara,Cross River state,,,,,,No,Yes,Yes,January,1,2025,2025-01
+Ijibor health centre,Bekwara,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Adagom health centre,Ogoja,Cross River state,,,,,,No,Yes,No,January,1,2025,2025-01
+Idum model primary health centre,Ogoja,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Adeni health post,Yala,Cross River state,,,,,,No,Yes,Yes,January,1,2025,2025-01
+Iyeche Itekpa health post,Yala,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Ndohale health centre,Yala,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Ebo- Woleche primary health centre,Yala,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Ujokom health post,Yala,Cross River state,,,,,,Yes,No,Yes,January,1,2025,2025-01
+Bituol health post,Yala,Cross River state,,,,,,No,Yes,Yes,January,1,2025,2025-01
+Igbekurekor Primary health centre,Yala,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Akreha primary health centre,Yala,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Egbeja primary health post,Yala,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Winnimba health centre,Ogoja,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Akam health post,Ikom,Cross River state,,,,,,No,Yes,Yes,January,1,2025,2025-01
+Other health post,Ikom,Cross River state,,,,,,No,No,Yes,January,1,2025,2025-01
+Atimaka health post,Ikom,Cross River state,,,,,,Yes,Yes,Yes,January,1,2025,2025-01
+Eganga health post,Ikom,Cross River state,,,,,,No,No,Yes,January,1,2025,2025-01
+Akorofono health post,Ikom,Cross River state,,,,,,No,Yes,Yes,January,1,2025,2025-01
