@@ -34,12 +34,38 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts"
+import type { PieLabelRenderProps } from "recharts"
 import { getCurrentUser } from "@/lib/auth"
 
+type AggregatedRecord = {
+  YEAR_MONTH: string
+  LGA?: string
+  NAME_OF_FACILITIES?: string
+  OPD?: number
+  TOTAL_SERVICE?: number
+  RTI?: number
+  DIARRHEA?: number
+  UTI?: number
+  GIT?: number
+  REFERRALS?: number
+  DEATHS?: number
+  [key: string]: string | number | undefined
+}
+
+type FilteredDataset = {
+  lgaData: AggregatedRecord[]
+  facilityData: AggregatedRecord[]
+}
+
+const renderDistributionLabel = ({ name, percent }: PieLabelRenderProps) => {
+  const ratio = typeof percent === "number" ? percent : Number(percent ?? 0)
+  return `${name ?? "Unknown"} ${Math.round(ratio * 100)}%`
+}
+
 export default function DashboardPage() {
-  const [stateData, setStateData] = useState<any[]>([])
-  const [lgaData, setLgaData] = useState<any[]>([])
-  const [facilityData, setFacilityData] = useState<any[]>([])
+  const [stateData, setStateData] = useState<AggregatedRecord[]>([])
+  const [lgaData, setLgaData] = useState<AggregatedRecord[]>([])
+  const [facilityData, setFacilityData] = useState<AggregatedRecord[]>([])
   const currentUser = getCurrentUser()
   const [selectedLGA, setSelectedLGA] = useState(currentUser?.lga || "all")
   const [selectedFacility, setSelectedFacility] = useState(currentUser?.facility || "all")
@@ -81,16 +107,16 @@ export default function DashboardPage() {
         })
 
         // Parse CSV data
-        const parseCSV = (text: string) => {
+        const parseCSV = (text: string): AggregatedRecord[] => {
           const lines = text.trim().split("\n")
           const headers = lines[0].split(",")
           return lines.slice(1).map((line) => {
             const values = line.split(",")
-            return headers.reduce((obj: any, header, index) => {
+            return headers.reduce<AggregatedRecord>((obj, header, index) => {
               const value = values[index]
               obj[header] = isNaN(Number(value)) ? value : Number(value)
               return obj
-            }, {})
+            }, { YEAR_MONTH: "" })
           })
         }
 
@@ -117,7 +143,7 @@ export default function DashboardPage() {
     loadData()
   }, [])
 
-  const filteredData = useMemo(() => {
+  const filteredData = useMemo<FilteredDataset>(() => {
     console.log("[v0] Filtering data for LGA:", selectedLGA, "Facility:", selectedFacility)
 
     // For health workers and facility managers, filter by their specific facility
@@ -139,7 +165,7 @@ export default function DashboardPage() {
       }
     }
 
-    const filtered = {
+    const filtered: FilteredDataset = {
       lgaData: lgaData.filter((d) => d.LGA === selectedLGA),
       facilityData: facilityData.filter((d) => d.LGA === selectedLGA),
     }
@@ -184,13 +210,21 @@ export default function DashboardPage() {
 
   const uniqueLGAs = useMemo(() => {
     if (selectedLGA === "all") {
-      return new Set(lgaData.map((d) => d.LGA)).size
+      return new Set(
+        lgaData
+          .map((d) => d.LGA)
+          .filter((lga): lga is string => typeof lga === "string" && lga.length > 0),
+      ).size
     }
     return 1
   }, [selectedLGA, lgaData])
 
   const uniqueFacilities = useMemo(() => {
-    return new Set(filteredData.facilityData.map((d) => d.NAME_OF_FACILITIES)).size
+    return new Set(
+      filteredData.facilityData
+        .map((d) => d.NAME_OF_FACILITIES)
+        .filter((facility): facility is string => typeof facility === "string" && facility.length > 0),
+    ).size
   }, [filteredData.facilityData])
 
   const avgOPDPerFacility = uniqueFacilities > 0 ? Math.round(totalOPD / uniqueFacilities) : 0
@@ -207,7 +241,7 @@ export default function DashboardPage() {
   const referralRate = totalOPD > 0 ? ((totalReferrals / totalOPD) * 100).toFixed(1) : "0"
 
   const monthlyTrends = useMemo(() => {
-    let dataSource
+    let dataSource: AggregatedRecord[]
     if (currentUser?.role === "health_worker" || currentUser?.role === "facility_manager") {
       dataSource = filteredData.facilityData
     } else {
@@ -230,9 +264,12 @@ export default function DashboardPage() {
   const lgaComparison = useMemo(() => {
     const dataSource = selectedLGA === "all" ? lgaData : filteredData.lgaData
 
-    return Array.from(
-      dataSource.reduce((acc, d) => {
+    const aggregated = dataSource.reduce(
+      (acc, d) => {
         const lga = d.LGA
+        if (!lga) {
+          return acc
+        }
         if (!acc.has(lga)) {
           acc.set(lga, { lga, opd: 0, services: 0, referrals: 0 })
         }
@@ -241,9 +278,11 @@ export default function DashboardPage() {
         current.services += d.TOTAL_SERVICE || 0
         current.referrals += d.REFERRALS || 0
         return acc
-      }, new Map()),
+      },
+      new Map<string, { lga: string; opd: number; services: number; referrals: number }>(),
     )
-      .map(([_, data]) => data)
+
+    return Array.from(aggregated.values())
       .sort((a, b) => b.opd - a.opd)
       .slice(0, 8)
   }, [selectedLGA, lgaData, filteredData.lgaData])
@@ -265,20 +304,24 @@ export default function DashboardPage() {
   }, [selectedLGA, stateData, filteredData, currentUser])
 
   const topFacilities = useMemo(() => {
-    const facilityUtilization = filteredData.facilityData
-      .reduce((acc, d) => {
+    const facilityUtilization = filteredData.facilityData.reduce(
+      (acc, d) => {
         const facility = d.NAME_OF_FACILITIES
+        if (!facility) {
+          return acc
+        }
         if (!acc.has(facility)) {
-          acc.set(facility, { facility, opd: 0, services: 0, utilization: 0 })
+          acc.set(facility, { facility, opd: 0, services: 0 })
         }
         const current = acc.get(facility)!
         current.opd += d.OPD || 0
         current.services += d.TOTAL_SERVICE || 0
         return acc
-      }, new Map())
-      .values()
+      },
+      new Map<string, { facility: string; opd: number; services: number }>(),
+    )
 
-    return Array.from(facilityUtilization)
+    return Array.from(facilityUtilization.values())
       .map((f) => ({
         ...f,
         utilization: f.opd > 0 ? Math.round((f.services / f.opd) * 100) : 0,
@@ -288,7 +331,13 @@ export default function DashboardPage() {
   }, [filteredData.facilityData])
 
   // Get unique LGAs for filter
-  const lgas = Array.from(new Set(lgaData.map((d) => d.LGA))).sort()
+  const lgas = Array.from(
+    new Set(
+      lgaData
+        .map((d) => d.LGA)
+        .filter((lga): lga is string => typeof lga === "string" && lga.length > 0),
+    ),
+  ).sort()
 
   const canChangeLGA = !currentUser?.lga || currentUser.role === "state_official"
 
@@ -600,7 +649,7 @@ export default function DashboardPage() {
                       cx="50%"
                       cy="50%"
                       labelLine={false}
-                      label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                      label={renderDistributionLabel}
                       outerRadius={120}
                       fill="#8884d8"
                       dataKey="value"

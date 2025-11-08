@@ -1,6 +1,8 @@
+import { NextRequest, NextResponse } from "next/server"
+
 export const maxDuration = 30
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json()
 
@@ -66,13 +68,13 @@ You are empathetic, data-driven, and focused on improving health outcomes for un
     const data = await response.json()
     const assistantMessage = data.choices[0]?.message?.content || "I apologize, but I couldn't generate a response."
 
-    return Response.json({
+    return NextResponse.json({
       role: "assistant",
       content: assistantMessage,
     })
   } catch (error) {
     console.error("[v0] Chat API error:", error)
-    return Response.json(
+    return NextResponse.json(
       {
         role: "assistant",
         content: "I apologize, but I encountered an error. Please try again.",
