@@ -2,12 +2,20 @@
 
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
-import { getCurrentUser, ROLE_PERMISSIONS, type User } from "@/lib/auth"
+import { getCurrentUser, ROLE_PERMISSIONS, type User, type UserRole } from "@/lib/auth"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Activity, AlertTriangle, TrendingUp, FileText, LayoutDashboard, BarChart3, FileBarChart } from "lucide-react"
 
-const FEATURE_CARDS = {
+type FeatureCard = {
+  title: string
+  description: string
+  icon: typeof Activity
+  href: string
+  color: string
+}
+
+const FEATURE_CARDS: Record<UserRole, FeatureCard[]> = {
   health_worker: [
     {
       title: "AI Triage",
@@ -22,6 +30,29 @@ const FEATURE_CARDS = {
       icon: LayoutDashboard,
       href: "/dashboard",
       color: "from-emerald-500 to-teal-500",
+    },
+  ],
+  facility_manager: [
+    {
+      title: "Facility Oversight",
+      description: "Monitor performance, staffing, and patient flow",
+      icon: LayoutDashboard,
+      href: "/dashboard",
+      color: "from-emerald-500 to-teal-500",
+    },
+    {
+      title: "AI Triage",
+      description: "Coordinate rapid patient prioritization",
+      icon: Activity,
+      href: "/triage",
+      color: "from-blue-500 to-cyan-500",
+    },
+    {
+      title: "Stock Alerts",
+      description: "Track essential medicines and supplies",
+      icon: AlertTriangle,
+      href: "/stock-alerts",
+      color: "from-orange-500 to-red-500",
     },
   ],
   lga_admin: [
@@ -121,7 +152,7 @@ export default function PortalPage() {
   }
 
   const roleInfo = ROLE_PERMISSIONS[user.role]
-  const features = FEATURE_CARDS[user.role] || []
+const features = FEATURE_CARDS[user.role] || []
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950">

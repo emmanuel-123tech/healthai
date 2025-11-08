@@ -18,6 +18,7 @@ import {
   Pie,
   Cell,
 } from "recharts"
+import type { PieLabelRenderProps } from "recharts"
 
 interface ChartProps {
   stateData: any[]
@@ -27,6 +28,11 @@ interface ChartProps {
 }
 
 const COLORS = ["hsl(var(--primary))", "hsl(var(--accent))", "hsl(var(--secondary))", "hsl(var(--warning))"]
+
+const renderPieLabel = ({ name, percent }: PieLabelRenderProps) => {
+  const ratio = typeof percent === "number" ? percent : Number(percent ?? 0)
+  return `${name ?? "Unknown"}: ${Math.round(ratio * 100)}%`
+}
 
 export function AdvancedCharts({ stateData, lgaData, facilityData, focusDisease }: ChartProps) {
   // Format data for charts
@@ -140,7 +146,7 @@ export function AdvancedCharts({ stateData, lgaData, facilityData, focusDisease 
                 cx="50%"
                 cy="50%"
                 labelLine={false}
-                label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                label={renderPieLabel}
                 outerRadius={100}
                 fill="#8884d8"
                 dataKey="value"

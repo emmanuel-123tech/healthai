@@ -11,6 +11,16 @@ interface ForecastingProps {
   lgaData: any[]
 }
 
+type ForecastChartPoint = {
+  month: string
+  RTIActual: number | null
+  RTIForecast: number | null
+  DiarrheaActual: number | null
+  DiarrheaForecast: number | null
+  UTIActual: number | null
+  UTIForecast: number | null
+}
+
 export function DiseaseForecasting({ stateData, lgaData }: ForecastingProps) {
   // Simple forecasting using moving average
   const forecastNextMonth = (data: number[]) => {
@@ -41,20 +51,38 @@ export function DiseaseForecasting({ stateData, lgaData }: ForecastingProps) {
       : 0
 
   // Prepare chart data with forecast
-  const chartData = [
-    ...stateData.map((d, i) => ({
-      month: new Date(d.YEAR_MONTH).toLocaleDateString("en-US", { month: "short", year: "2-digit" }),
-      RTI: d.RTI,
-      Diarrhea: d.DIARRHEA,
-      UTI: d.UTI,
-      type: "actual",
-    })),
+  const historicalChartData: ForecastChartPoint[] = stateData.map((d, index) => {
+    const isLastActual = index === stateData.length - 1
+    const month = new Date(d.YEAR_MONTH).toLocaleDateString("en-US", {
+      month: "short",
+      year: "2-digit",
+    })
+
+    const rti = typeof d.RTI === "number" ? d.RTI : Number(d.RTI ?? 0)
+    const diarrhea = typeof d.DIARRHEA === "number" ? d.DIARRHEA : Number(d.DIARRHEA ?? 0)
+    const uti = typeof d.UTI === "number" ? d.UTI : Number(d.UTI ?? 0)
+
+    return {
+      month,
+      RTIActual: rti,
+      RTIForecast: isLastActual ? rti : null,
+      DiarrheaActual: diarrhea,
+      DiarrheaForecast: isLastActual ? diarrhea : null,
+      UTIActual: uti,
+      UTIForecast: isLastActual ? uti : null,
+    }
+  })
+
+  const chartData: ForecastChartPoint[] = [
+    ...historicalChartData,
     {
       month: "Forecast",
-      RTI: forecastRTI,
-      Diarrhea: forecastDiarrhea,
-      UTI: forecastUTI,
-      type: "forecast",
+      RTIActual: null,
+      RTIForecast: forecastRTI,
+      DiarrheaActual: null,
+      DiarrheaForecast: forecastDiarrhea,
+      UTIActual: null,
+      UTIForecast: forecastUTI,
     },
   ]
 
@@ -142,26 +170,56 @@ export function DiseaseForecasting({ stateData, lgaData }: ForecastingProps) {
             <Legend />
             <Line
               type="monotone"
-              dataKey="RTI"
+              dataKey="RTIActual"
+              name="RTI (Actual)"
               stroke="hsl(var(--primary))"
               strokeWidth={3}
-              strokeDasharray={(entry: any) => (entry.type === "forecast" ? "5 5" : "0")}
               dot={{ fill: "hsl(var(--primary))", r: 4 }}
             />
             <Line
               type="monotone"
-              dataKey="Diarrhea"
+              dataKey="RTIForecast"
+              name="RTI (Forecast)"
+              stroke="hsl(var(--primary))"
+              strokeWidth={3}
+              strokeDasharray="5 5"
+              connectNulls
+              dot={{ fill: "hsl(var(--primary))", r: 4 }}
+            />
+            <Line
+              type="monotone"
+              dataKey="DiarrheaActual"
+              name="Diarrhea (Actual)"
               stroke="hsl(var(--accent))"
               strokeWidth={3}
-              strokeDasharray={(entry: any) => (entry.type === "forecast" ? "5 5" : "0")}
               dot={{ fill: "hsl(var(--accent))", r: 4 }}
             />
             <Line
               type="monotone"
-              dataKey="UTI"
+              dataKey="DiarrheaForecast"
+              name="Diarrhea (Forecast)"
+              stroke="hsl(var(--accent))"
+              strokeWidth={3}
+              strokeDasharray="5 5"
+              connectNulls
+              dot={{ fill: "hsl(var(--accent))", r: 4 }}
+            />
+            <Line
+              type="monotone"
+              dataKey="UTIActual"
+              name="UTI (Actual)"
               stroke="hsl(var(--secondary))"
               strokeWidth={3}
-              strokeDasharray={(entry: any) => (entry.type === "forecast" ? "5 5" : "0")}
+              dot={{ fill: "hsl(var(--secondary))", r: 4 }}
+            />
+            <Line
+              type="monotone"
+              dataKey="UTIForecast"
+              name="UTI (Forecast)"
+              stroke="hsl(var(--secondary))"
+              strokeWidth={3}
+              strokeDasharray="5 5"
+              connectNulls
               dot={{ fill: "hsl(var(--secondary))", r: 4 }}
             />
           </LineChart>

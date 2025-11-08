@@ -1,402 +1,396 @@
 "use client"
 
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { AuthGuard } from "@/components/auth-guard"
-import { Activity, AlertCircle, CheckCircle, ArrowRight, Stethoscope, Pill, Building2 } from "lucide-react"
+import { AlertCircle, CheckCircle2, ClipboardList, HeartPulse, Stethoscope, Thermometer, Users } from "lucide-react"
+import {
+  PatientInput,
+  triagePatient,
+  SeverityLevel,
+  TriageRecommendation,
+} from "@/lib/ai-triage"
 
-interface TriageResult {
-  condition: string
-  severity: "emergency" | "urgent" | "routine"
-  confidence: number
-  symptoms: string[]
-  treatment: string[]
-  referral: {
-    needed: boolean
-    facility: string
-    reason: string
-  }
-  medications: {
-    name: string
-    dosage: string
-    duration: string
-  }[]
+const symptomCatalogue = [
+  { value: "fever", label: "High fever" },
+  { value: "chills", label: "Chills" },
+  { value: "headache", label: "Severe headache" },
+  { value: "cough", label: "Persistent cough" },
+  { value: "breathing", label: "Difficulty breathing" },
+  { value: "vomiting", label: "Vomiting" },
+  { value: "diarrhea", label: "Watery stool" },
+  { value: "abdominal", label: "Abdominal pain" },
+  { value: "vision", label: "Blurred vision" },
+  { value: "weakness", label: "Weakness" },
+  { value: "chest", label: "Chest pain" },
+]
+
+const riskCatalogue = [
+  { value: "pregnant", label: "Pregnant" },
+  { value: "under5", label: "Under 5 years" },
+  { value: "over60", label: "Over 60" },
+  { value: "hypertension", label: "Hypertension" },
+  { value: "diabetes", label: "Diabetes" },
+]
+
+const severityStyles: Record<SeverityLevel, string> = {
+  emergency: "bg-red-500/10 text-red-400 border-red-500/30",
+  urgent: "bg-amber-500/10 text-amber-400 border-amber-500/30",
+  routine: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
 }
 
 export default function TriagePage() {
   const [patientName, setPatientName] = useState("")
-  const [age, setAge] = useState("")
-  const [symptoms, setSymptoms] = useState("")
-  const [result, setResult] = useState<TriageResult | null>(null)
+  const [gender, setGender] = useState<"male" | "female">("female")
+  const [age, setAge] = useState("30")
+  const [onset, setOnset] = useState("24")
+  const [selectedSymptoms, setSelectedSymptoms] = useState<string[]>(["fever", "headache"])
+  const [riskFactors, setRiskFactors] = useState<string[]>(["over60"])
+  const [temperature, setTemperature] = useState("38.2")
+  const [heartRate, setHeartRate] = useState("110")
+  const [systolic, setSystolic] = useState("140")
+  const [diastolic, setDiastolic] = useState("90")
+  const [spo2, setSpo2] = useState("97")
+  const [freeText, setFreeText] = useState("")
   const [loading, setLoading] = useState(false)
+  const [result, setResult] = useState<TriageRecommendation | null>(null)
+
+  const toggleValue = (value: string, list: string[], setter: (values: string[]) => void) => {
+    setter(
+      list.includes(value)
+        ? list.filter((item) => item !== value)
+        : [...list, value],
+    )
+  }
+
+  const derivedRiskFactors = useMemo(() => {
+    const computed: string[] = [...riskFactors]
+    const numericAge = Number(age)
+    if (!Number.isNaN(numericAge) && numericAge < 5 && !computed.includes("under5")) {
+      computed.push("under5")
+    }
+    if (!Number.isNaN(numericAge) && numericAge > 60 && !computed.includes("over60")) {
+      computed.push("over60")
+    }
+    return computed
+  }, [age, riskFactors])
 
   const handleAssessment = () => {
     setLoading(true)
-
-    // Simulate AI assessment based on symptoms
     setTimeout(() => {
-      const symptomsLower = symptoms.toLowerCase()
-      let assessment: TriageResult
-
-      if (symptomsLower.includes("fever") && symptomsLower.includes("headache")) {
-        assessment = {
-          condition: "Suspected Malaria",
-          severity: "urgent",
-          confidence: 87,
-          symptoms: ["High fever", "Headache", "Body aches", "Chills"],
-          treatment: [
-            "Immediate malaria rapid diagnostic test (RDT)",
-            "Start antimalarial treatment if positive",
-            "Monitor temperature every 4 hours",
-            "Ensure adequate hydration",
-          ],
-          referral: {
-            needed: false,
-            facility: "PHC IPELE",
-            reason: "Can be managed at primary care level",
-          },
-          medications: [
-            {
-              name: "Artemether-Lumefantrine (Coartem)",
-              dosage: "4 tablets twice daily",
-              duration: "3 days",
-            },
-            {
-              name: "Paracetamol",
-              dosage: "500mg every 6 hours",
-              duration: "As needed for fever",
-            },
-          ],
-        }
-      } else if (symptomsLower.includes("diarrhea") || symptomsLower.includes("vomiting")) {
-        assessment = {
-          condition: "Acute Gastroenteritis",
-          severity: "routine",
-          confidence: 82,
-          symptoms: ["Diarrhea", "Vomiting", "Abdominal pain", "Dehydration risk"],
-          treatment: [
-            "Oral rehydration therapy (ORS)",
-            "Monitor hydration status",
-            "Advise on food hygiene",
-            "Follow up in 48 hours if symptoms persist",
-          ],
-          referral: {
-            needed: false,
-            facility: "PHC IPELE",
-            reason: "Manageable with ORS and monitoring",
-          },
-          medications: [
-            {
-              name: "Oral Rehydration Salts (ORS)",
-              dosage: "1 sachet in 1L water, drink frequently",
-              duration: "Until symptoms resolve",
-            },
-            {
-              name: "Zinc Sulfate (for children)",
-              dosage: "20mg once daily",
-              duration: "10-14 days",
-            },
-          ],
-        }
-      } else if (symptomsLower.includes("cough") || symptomsLower.includes("breathing")) {
-        assessment = {
-          condition: "Respiratory Tract Infection",
-          severity: "urgent",
-          confidence: 79,
-          symptoms: ["Persistent cough", "Difficulty breathing", "Chest pain", "Fever"],
-          treatment: [
-            "Assess respiratory rate and oxygen saturation",
-            "Start antibiotic therapy",
-            "Monitor for signs of pneumonia",
-            "Chest X-ray if available",
-          ],
-          referral: {
-            needed: true,
-            facility: "General Hospital Owo",
-            reason: "Requires chest X-ray and possible oxygen therapy",
-          },
-          medications: [
-            {
-              name: "Amoxicillin",
-              dosage: "500mg three times daily",
-              duration: "7 days",
-            },
-            {
-              name: "Salbutamol Inhaler (if wheezing)",
-              dosage: "2 puffs every 4-6 hours",
-              duration: "As needed",
-            },
-          ],
-        }
-      } else if (symptomsLower.includes("typhoid") || symptomsLower.includes("prolonged fever")) {
-        assessment = {
-          condition: "Suspected Typhoid Fever",
-          severity: "urgent",
-          confidence: 85,
-          symptoms: ["Prolonged fever", "Abdominal pain", "Weakness", "Loss of appetite"],
-          treatment: [
-            "Widal test or blood culture",
-            "Start antibiotic therapy immediately",
-            "Monitor for complications",
-            "Ensure proper nutrition and hydration",
-          ],
-          referral: {
-            needed: false,
-            facility: "PHC IPELE",
-            reason: "Can initiate treatment at PHC, refer if complications arise",
-          },
-          medications: [
-            {
-              name: "Ciprofloxacin",
-              dosage: "500mg twice daily",
-              duration: "7-10 days",
-            },
-            {
-              name: "Paracetamol",
-              dosage: "500mg every 6 hours",
-              duration: "As needed",
-            },
-          ],
-        }
-      } else {
-        assessment = {
-          condition: "General Assessment Required",
-          severity: "routine",
-          confidence: 65,
-          symptoms: ["Non-specific symptoms"],
-          treatment: [
-            "Complete physical examination",
-            "Take detailed medical history",
-            "Order relevant laboratory tests",
-            "Monitor and reassess in 24-48 hours",
-          ],
-          referral: {
-            needed: false,
-            facility: "PHC IPELE",
-            reason: "Initial assessment at primary care level",
-          },
-          medications: [
-            {
-              name: "Symptomatic treatment as needed",
-              dosage: "Based on clinical findings",
-              duration: "As prescribed",
-            },
-          ],
-        }
+      const payload: PatientInput = {
+        name: patientName || "Unknown",
+        age: Number(age) || 0,
+        gender,
+        pregnant: derivedRiskFactors.includes("pregnant"),
+        symptoms: selectedSymptoms,
+        vitals: {
+          temperature: Number(temperature) || null,
+          heartRate: Number(heartRate) || null,
+          systolic: Number(systolic) || null,
+          diastolic: Number(diastolic) || null,
+          spo2: Number(spo2) || null,
+        },
+        riskFactors: derivedRiskFactors,
+        onsetHours: Number(onset) || 0,
+        notes: freeText,
       }
 
+      const assessment = triagePatient(payload)
       setResult(assessment)
       setLoading(false)
-    }, 1500)
-  }
-
-  const severityColors = {
-    emergency: "bg-red-500/10 text-red-500 border-red-500/20",
-    urgent: "bg-amber-500/10 text-amber-500 border-amber-500/20",
-    routine: "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
+    }, 800)
   }
 
   return (
     <AuthGuard requiredFeature="triage">
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-        <div className="container mx-auto px-4 py-8">
-          <div className="mb-8">
-            <h1 className="text-4xl font-bold text-white mb-3">{"AI Clinical Triage System"}</h1>
-            <p className="text-slate-400 text-lg">
-              {"Intelligent symptom assessment with treatment recommendations and referral guidance"}
+        <div className="container mx-auto px-4 py-8 space-y-8">
+          <header className="space-y-3">
+            <h1 className="text-4xl font-bold text-white">AI Clinical Triage</h1>
+            <p className="text-slate-400 text-lg max-w-3xl">
+              Structured triage assistant that blends vitals, symptoms, and facility protocols to recommend stabilisation, referral, and medication pathways within seconds.
             </p>
-          </div>
+          </header>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Input Form */}
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur">
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center">
-                    <Stethoscope className="w-5 h-5 text-emerald-500" />
-                  </div>
-                  <h2 className="text-xl font-semibold text-white">{"Patient Assessment"}</h2>
-                </div>
-
-                <div className="space-y-4">
-                  <div>
-                    <label className="text-sm font-medium text-slate-300 mb-2 block">{"Patient Name"}</label>
+          <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+            <Card className="bg-slate-900/60 border-slate-800">
+              <div className="p-6 space-y-6">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">Patient name</label>
                     <Input
                       value={patientName}
-                      onChange={(e) => setPatientName(e.target.value)}
-                      placeholder="Enter patient name"
-                      className="bg-slate-800 border-slate-700 text-white"
+                      onChange={(event) => setPatientName(event.target.value)}
+                      placeholder="Patient name"
+                      className="bg-slate-950 border-slate-800 text-white"
                     />
                   </div>
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">Gender</label>
+                    <Select value={gender} onValueChange={(value: "male" | "female") => setGender(value)}>
+                      <SelectTrigger className="bg-slate-950 border-slate-800 text-white">
+                        <SelectValue placeholder="Select" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="female">Female</SelectItem>
+                        <SelectItem value="male">Male</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
 
-                  <div>
-                    <label className="text-sm font-medium text-slate-300 mb-2 block">{"Age"}</label>
+                <div className="grid md:grid-cols-4 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">Age</label>
                     <Input
                       value={age}
-                      onChange={(e) => setAge(e.target.value)}
-                      placeholder="Enter age"
+                      onChange={(event) => setAge(event.target.value)}
                       type="number"
-                      className="bg-slate-800 border-slate-700 text-white"
+                      min={0}
+                      className="bg-slate-950 border-slate-800 text-white"
                     />
                   </div>
-
-                  <div>
-                    <label className="text-sm font-medium text-slate-300 mb-2 block">{"Symptoms & Complaints"}</label>
-                    <Textarea
-                      value={symptoms}
-                      onChange={(e) => setSymptoms(e.target.value)}
-                      placeholder="Describe symptoms: fever, headache, cough, diarrhea, etc."
-                      rows={6}
-                      className="bg-slate-800 border-slate-700 text-white"
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">Symptom onset (hrs)</label>
+                    <Input
+                      value={onset}
+                      onChange={(event) => setOnset(event.target.value)}
+                      type="number"
+                      min={0}
+                      className="bg-slate-950 border-slate-800 text-white"
                     />
                   </div>
-
-                  <Button
-                    onClick={handleAssessment}
-                    disabled={!patientName || !age || !symptoms || loading}
-                    className="w-full bg-emerald-600 hover:bg-emerald-700"
-                  >
-                    {loading ? "Analyzing..." : "Assess Patient"}
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">Temperature °C</label>
+                    <Input
+                      value={temperature}
+                      onChange={(event) => setTemperature(event.target.value)}
+                      type="number"
+                      step="0.1"
+                      className="bg-slate-950 border-slate-800 text-white"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">Heart rate</label>
+                    <Input
+                      value={heartRate}
+                      onChange={(event) => setHeartRate(event.target.value)}
+                      type="number"
+                      className="bg-slate-950 border-slate-800 text-white"
+                    />
+                  </div>
                 </div>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">Blood pressure (systolic)</label>
+                    <Input
+                      value={systolic}
+                      onChange={(event) => setSystolic(event.target.value)}
+                      type="number"
+                      className="bg-slate-950 border-slate-800 text-white"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">Blood pressure (diastolic)</label>
+                    <Input
+                      value={diastolic}
+                      onChange={(event) => setDiastolic(event.target.value)}
+                      type="number"
+                      className="bg-slate-950 border-slate-800 text-white"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm text-slate-300">SpO₂ %</label>
+                    <Input
+                      value={spo2}
+                      onChange={(event) => setSpo2(event.target.value)}
+                      type="number"
+                      className="bg-slate-950 border-slate-800 text-white"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <label className="text-sm text-slate-300 flex items-center gap-2">
+                    <Stethoscope className="h-4 w-4 text-slate-500" /> Presenting symptoms
+                  </label>
+                  <div className="flex flex-wrap gap-2">
+                    {symptomCatalogue.map((symptom) => {
+                      const selected = selectedSymptoms.includes(symptom.value)
+                      return (
+                        <button
+                          key={symptom.value}
+                          type="button"
+                          onClick={() => toggleValue(symptom.value, selectedSymptoms, setSelectedSymptoms)}
+                          className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+                            selected
+                              ? "bg-emerald-500/20 border border-emerald-400 text-emerald-200"
+                              : "bg-slate-900 border border-slate-700 text-slate-300 hover:border-slate-500"
+                          }`}
+                        >
+                          {symptom.label}
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <label className="text-sm text-slate-300 flex items-center gap-2">
+                    <Users className="h-4 w-4 text-slate-500" /> Risk modifiers
+                  </label>
+                  <div className="flex flex-wrap gap-2">
+                    {riskCatalogue.map((risk) => {
+                      const selected = riskFactors.includes(risk.value)
+                      return (
+                        <button
+                          key={risk.value}
+                          type="button"
+                          onClick={() => toggleValue(risk.value, riskFactors, setRiskFactors)}
+                          className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+                            selected
+                              ? "bg-amber-500/20 border border-amber-400 text-amber-200"
+                              : "bg-slate-900 border border-slate-700 text-slate-300 hover:border-slate-500"
+                          }`}
+                        >
+                          {risk.label}
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm text-slate-300 flex items-center gap-2">
+                    <ClipboardList className="h-4 w-4 text-slate-500" /> Clinical notes
+                  </label>
+                  <Textarea
+                    value={freeText}
+                    onChange={(event) => setFreeText(event.target.value)}
+                    placeholder="Describe notable findings, allergies, or medication history"
+                    className="min-h-[100px] bg-slate-950 border-slate-800 text-slate-200"
+                  />
+                </div>
+
+                <Button onClick={handleAssessment} disabled={loading} className="bg-emerald-600 hover:bg-emerald-700">
+                  {loading ? "Analysing vitals…" : "Run AI Triage"}
+                </Button>
               </div>
             </Card>
 
-            {/* Results */}
-            {result && (
-              <div className="space-y-6">
-                {/* Diagnosis */}
-                <Card className="bg-slate-900/50 border-slate-800 backdrop-blur">
-                  <div className="p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <h3 className="text-xl font-semibold text-white mb-2">{result.condition}</h3>
-                        <p className="text-sm text-slate-400">{"Confidence: " + result.confidence + "%"}</p>
-                      </div>
-                      <Badge className={severityColors[result.severity]}>{result.severity.toUpperCase()}</Badge>
-                    </div>
+            <Card className="bg-slate-900/60 border-slate-800">
+              <div className="p-6 space-y-5">
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h2 className="text-xl font-semibold text-white flex items-center gap-2">
+                      <HeartPulse className="h-5 w-5 text-emerald-400" /> Triage disposition
+                    </h2>
+                    <p className="text-sm text-slate-400">
+                      Generated from structured symptom scoring and vitals safety thresholds.
+                    </p>
+                  </div>
+                  {result && (
+                    <Badge className={`border ${severityStyles[result.severity]}`}>{result.severity.toUpperCase()}</Badge>
+                  )}
+                </div>
 
+                {!result && (
+                  <div className="text-sm text-slate-400 space-y-3">
+                    <p>
+                      Provide presenting complaints, vitals, and risk modifiers to receive a confidence-weighted clinical pathway. AI recommendations mirror Ondo State PHC protocols.
+                    </p>
+                    <div className="flex items-center gap-2 text-slate-500 text-xs">
+                      <Thermometer className="h-4 w-4" />
+                      AI monitors thresholds continuously for early escalation.
+                    </div>
+                  </div>
+                )}
+
+                {result && (
+                  <div className="space-y-5">
                     <div className="space-y-2">
-                      <p className="text-sm font-medium text-slate-300">{"Identified Symptoms:"}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {result.symptoms.map((symptom, idx) => (
-                          <Badge key={idx} variant="outline" className="bg-slate-800 text-slate-300 border-slate-700">
-                            {symptom}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-
-                {/* Treatment Protocol */}
-                <Card className="bg-slate-900/50 border-slate-800 backdrop-blur">
-                  <div className="p-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center">
-                        <Activity className="w-5 h-5 text-blue-500" />
-                      </div>
-                      <h3 className="text-lg font-semibold text-white">{"Treatment Protocol"}</h3>
+                      <h3 className="text-lg font-semibold text-white flex items-center gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-emerald-400" /> {result.condition}
+                      </h3>
+                      <p className="text-sm text-slate-300">
+                        Confidence {result.confidence}% with matched symptoms: {result.matchedSymptoms.join(", ") || "None"}
+                      </p>
                     </div>
 
-                    <ul className="space-y-2">
-                      {result.treatment.map((step, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-slate-300">{step}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </Card>
+                    <div className="grid gap-3">
+                      <Card className="bg-slate-950/40 border-slate-800">
+                        <div className="p-4 space-y-2">
+                          <h4 className="text-sm font-semibold text-white">Immediate clinical actions</h4>
+                          <ul className="space-y-1 text-sm text-slate-300 list-disc pl-4">
+                            {result.clinicalActions.map((action) => (
+                              <li key={action}>{action}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </Card>
 
-                {/* Medications */}
-                <Card className="bg-slate-900/50 border-slate-800 backdrop-blur">
-                  <div className="p-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center">
-                        <Pill className="w-5 h-5 text-purple-500" />
-                      </div>
-                      <h3 className="text-lg font-semibold text-white">{"Prescribed Medications"}</h3>
-                    </div>
-
-                    <div className="space-y-3">
-                      {result.medications.map((med, idx) => (
-                        <div key={idx} className="bg-slate-800/50 rounded-lg p-4">
-                          <p className="font-medium text-white mb-2">{med.name}</p>
-                          <div className="grid grid-cols-2 gap-2 text-sm">
+                      <Card className="bg-slate-950/40 border-slate-800">
+                        <div className="p-4 space-y-2">
+                          <h4 className="text-sm font-semibold text-white">Investigations & medications</h4>
+                          <div className="grid gap-3 md:grid-cols-2">
                             <div>
-                              <span className="text-slate-500">{"Dosage: "}</span>
-                              <span className="text-slate-300">{med.dosage}</span>
+                              <p className="text-xs uppercase text-slate-500">Investigations</p>
+                              <ul className="space-y-1 text-sm text-slate-300 list-disc pl-4">
+                                {result.investigations.map((investigation) => (
+                                  <li key={investigation}>{investigation}</li>
+                                ))}
+                              </ul>
                             </div>
                             <div>
-                              <span className="text-slate-500">{"Duration: "}</span>
-                              <span className="text-slate-300">{med.duration}</span>
+                              <p className="text-xs uppercase text-slate-500">Medications</p>
+                              <ul className="space-y-1 text-sm text-slate-300 list-disc pl-4">
+                                {result.medications.map((medication) => (
+                                  <li key={medication}>{medication}</li>
+                                ))}
+                              </ul>
                             </div>
                           </div>
                         </div>
-                      ))}
+                      </Card>
+
+                      <Card className="bg-slate-950/40 border-slate-800">
+                        <div className="p-4 space-y-2">
+                          <h4 className="text-sm font-semibold text-white">Referral guidance</h4>
+                          <p className="text-sm text-slate-300">
+                            {result.referral.needed ? (
+                              <span>
+                                Refer to <strong>{result.referral.target}</strong> — {result.referral.reason}
+                              </span>
+                            ) : (
+                              "Manage within facility; escalate if condition deteriorates."
+                            )}
+                          </p>
+                          <p className="text-xs text-slate-500">Monitoring</p>
+                          <ul className="space-y-1 text-sm text-slate-300 list-disc pl-4">
+                            {result.monitoring.map((line) => (
+                              <li key={line}>{line}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </Card>
                     </div>
                   </div>
-                </Card>
+                )}
 
-                {/* Referral Decision */}
-                <Card
-                  className={`border backdrop-blur ${
-                    result.referral.needed
-                      ? "bg-amber-500/10 border-amber-500/20"
-                      : "bg-emerald-500/10 border-emerald-500/20"
-                  }`}
-                >
-                  <div className="p-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div
-                        className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                          result.referral.needed ? "bg-amber-500/10" : "bg-emerald-500/10"
-                        }`}
-                      >
-                        <Building2
-                          className={`w-5 h-5 ${result.referral.needed ? "text-amber-500" : "text-emerald-500"}`}
-                        />
-                      </div>
-                      <h3 className="text-lg font-semibold text-white">{"Referral Decision"}</h3>
-                    </div>
-
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-2">
-                        {result.referral.needed ? (
-                          <AlertCircle className="w-5 h-5 text-amber-500" />
-                        ) : (
-                          <CheckCircle className="w-5 h-5 text-emerald-500" />
-                        )}
-                        <span className="font-medium text-white">
-                          {result.referral.needed ? "Referral Recommended" : "No Referral Needed"}
-                        </span>
-                      </div>
-
-                      <div className="bg-slate-900/50 rounded-lg p-4">
-                        <p className="text-sm text-slate-400 mb-2">{"Facility: " + result.referral.facility}</p>
-                        <p className="text-sm text-slate-300">{result.referral.reason}</p>
-                      </div>
-                    </div>
+                {result && (
+                  <div className="text-xs text-slate-500 border-t border-slate-800 pt-4 flex items-center gap-2">
+                    <AlertCircle className="h-4 w-4" /> Always combine AI suggestions with clinical judgement and national treatment guidelines.
                   </div>
-                </Card>
+                )}
               </div>
-            )}
-
-            {!result && (
-              <Card className="bg-slate-900/50 border-slate-800 backdrop-blur">
-                <div className="p-12 text-center">
-                  <Stethoscope className="w-16 h-16 text-slate-700 mx-auto mb-4" />
-                  <p className="text-slate-400">{"Enter patient information to begin assessment"}</p>
-                </div>
-              </Card>
-            )}
+            </Card>
           </div>
         </div>
       </div>
