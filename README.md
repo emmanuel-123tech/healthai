@@ -1,112 +1,215 @@
-# AfricareAI-by-Neural-Minds
+# AfricareAI
 
+### AI-powered decision support for Primary Health Care in Africa
 
-This project was developed for the AI for Smarter Primary Health Care in Africa as part of the 3 challenges hosted by DataFest Africa, which challenges innovators to strengthen Primary Health Care (PHC) systems across Africa through artificial intelligence and data-driven decision-making.
+AfricareAI is a web-based prototype built for the **AI for Smarter Primary Health Care in Africa** challenge hosted by DataFest Africa.
 
-Our team, Neural Minds, focused on a recurring challenge in African health systems  fragmented PHC data and reactive decision-making.
-We selected Ondo State, Nigeria, with its 18 Local Government Areas (LGAs) and more than 200 PHC facilities, as our pilot region.
-Ondo State typifies the realities of many African regions: uneven facility performance, manual reporting, and slow visibility of disease or supply trends.
+The project explores how fragmented Primary Health Care data can be transformed into clearer operational insight for health workers, LGA administrators, and state-level decision makers.
 
-The goal of our project was to build a unified, AI-powered platform that could:
+The pilot context is **Ondo State, Nigeria**, covering its 18 Local Government Areas and more than 200 Primary Health Care facilities.
 
-i.Aggregate and visualize PHC data across all 18 LGAs,
+**Prototype:** https://africareai.vercel.app/
 
-ii.Predict disease outbreaks, facility workload, and stock-out risks, and
+---
 
-iii.Provide each stakeholder  from PHC workers to state officials  with timely, data-driven insights for action.
+## The Problem
 
-Thus, AfricareAI was born  an intelligent, role-based platform that transforms routine PHC records into predictive foresight, allowing health facilities to predict, prepare, and protect their communities.
+Primary Health Care systems often struggle with fragmented reporting, slow visibility into disease patterns, uneven facility performance, and delayed supply or workload decisions.
 
+AfricareAI was designed around a simple question:
 
-## Team Name: Neural Minds_
- Pilot Region: Ondo State, Nigeria (18 LGAs)
-Note: Neural Minds_  Originally Registered as Neural Minds
+> **How can routinely collected PHC data be turned into timely, role-specific intelligence for better health-system decisions?**
 
-## Team Members:
-1)Emmanuel Ebiendele
+---
 
-2)Akanji Motunrayo
+## What AfricareAI Does
 
-3)Olusola Adekunle Stephen
+The prototype brings multiple decision-support workflows into one role-based platform.
 
-View the Prototype: https://africareai.vercel.app/
+### Health Worker View
 
-## Outcomes
+- facility-level data entry and monitoring
+- patient-assessment / triage-assistant concept
+- disease and activity visualisation
+- quick access to operational trends
 
-The outcome is AfricareAI, a functional AI-powered web platform that demonstrates how predictive analytics and visualization can transform Primary Health Care (PHC) operations across Ondo State’s 18 LGAs.
-The system successfully integrates Python-based data intelligence with a modern, role-based web interface, enabling health workers, LGA administrators, and policymakers to interact with insights that guide timely health decisions.
+### LGA Administrator View
 
-# A. System Architecture & User Roles
+- oversight across PHCs within an LGA
+- disease-trend monitoring
+- facility-utilisation views
+- stock and risk alerts
+- comparative facility analysis
 
-1)Health Worker (PHC Level)
+### State Official View
 
-Uses an AI triage assistant for patient assessment and decision support.
+- consolidated state-level insight across LGAs
+- comparative reports
+- forecasting and risk views
+- support for resource-allocation and planning decisions
 
-Inputs monthly facility data such as disease incidence, visits, and supply levels.
+---
 
-Instantly sees automated visualizations that reflect the facility’s activity and trends.
+## Product Architecture
 
-2)LGA Administrator (Facility Manager Level)
+```text
+PHC / Facility Data
+        ↓
+Cleaning, Validation & Aggregation
+        ↓
+Facility-Level Summaries
+LGA-Level Summaries
+State-Level Summaries
+        ↓
+Predictive / Risk Modelling Layer
+        ↓
+Role-Based Web Application
+        ↓
+Health Worker | LGA Admin | State Official
+```
 
-Oversees all PHCs within a specific LGA (18 in total).
+The broader product concept connects data processing, forecasting, visual analytics, and role-based decision support in one system.
 
-Monitors disease spread, facility utilization, and stock alerts.
+---
 
-Uses AI-driven predictions for disease outbreaks and facility load forecasts.
+## Data & Analytics Workflow
 
-Receives a Risk & Alert Stream that flags anomalies and emerging health risks.
+The project used PHC records from the Ondo State Contributory Health Commission as the basis for data preparation and aggregation.
 
-3)State Official / Policy Maker (State Level)
+The analytical workflow included:
 
-Accesses unified state-level insights from all 18 LGAs.
+- data cleaning and validation
+- facility-level aggregation
+- LGA-level aggregation
+- state-level aggregation
+- exploratory analysis and visualisation
+- preparation of structured datasets for forecasting and dashboard use
 
-Reviews AI-generated forecasts, stock-out warnings, and comparative reports.
+Python tools used in the data workflow included:
 
-Uses these insights for resource allocation, planning, and health policy design.
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
 
-# B. Data and AI Pipeline
+The project was designed to support modelling around:
 
-All PHC data were sourced from the Ondo State Contributory Health Commission, containing records for all facilities across the 18 LGAs.
-The dataset underwent cleaning, validation, and aggregation in Python, using Pandas, NumPy, Matplotlib, and Scikit-learn.
-This process produced multiple structured datasets  such as 
-Cleaned_Master_Records
-Facility_Month_Aggregation
- LGA_Month_Aggregation, and State_Month_Aggregation  which feed the AI models and dashboard layers.
-(Code base to data prepration & Aggregation : https://colab.research.google.com/drive/1gi25L9PXD8XL_gD2bRBr6z13MKYHdxIC?usp=sharing).
+- disease trends
+- facility utilisation
+- stock-out risk
 
-AI models built with Scikit-learn perform:
+---
 
-Disease trend forecasting (time-series and classification models)
+## Technology Stack
 
-Facility utilization prediction
+### Data & Machine Learning
 
-Stock-out risk estimation
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
 
-These models provide the analytical foundation for the platform’s real-time insights and decision support.
+### Frontend
 
-# C. Technology Stack
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
-The AfricareAI platform merges robust Python-based data processing with a scalable modern web framework.
+### Visualisation
 
-All data cleaning, feature engineering, and predictive modeling were implemented in Python, leveraging libraries such as Pandas, NumPy, Matplotlib, and Scikit-learn. This layer transforms raw PHC records into clean, structured datasets ready for forecasting and visualization.
+- Chart.js
+- Recharts
 
-The backend architecture was designed using Node.js, structured to operate as serverless APIs on Vercel.
-Although the live backend for user dataset uploads and automatic dashboard synchronization could not be fully implemented during the hackathon due to time and team constraints (no backend developer was available), the system is fully backend-ready.
-Its modular architecture allows seamless integration with databases like MongoDB or Firebase to handle future real-time data ingestion and storage.
+### Deployment
 
-The frontend was built with Next.js, React, and TypeScript, styled with TailwindCSS to ensure a responsive and mobile-friendly experience.
-Visual analytics were created using Chart.js and Recharts, enabling real-time tracking of disease trends, facility workloads, and supply levels.
-The platform is hosted on Vercel Cloud, providing 99.9% uptime and fast load times even in low-bandwidth environments.
-Data security is maintained through HTTPS encryption, JWT authentication, and role-based access control, following HIPAA-aligned privacy standards.
+- Vercel
 
-# D. Prototype Impact
+The application was structured to support serverless API integration and future connection to a persistent backend/database layer.
 
-i.Simulated deployment across 200+ PHCs in 18 LGAs of Ondo State.
+---
 
-ii.Achieved 95% forecast accuracy in disease trend prediction.
+## Current Prototype Status
 
-iii.Improved resource planning and proactive response by up to 30%.
+AfricareAI should be understood as a **hackathon prototype / proof of concept**, not a production health platform.
 
-iv.Ensured reliable 99.9% uptime with responsive.
+The prototype demonstrates the intended product flows, role-based dashboards, data visualisation, and predictive decision-support concept. Some production capabilities, including live backend ingestion, persistent multi-user data synchronisation, and full deployment of the predictive services, were not completed during the hackathon timeframe.
 
-v.Demonstrated strong scalability potential for statewide and national integration.
+This distinction matters because the project is strongest as evidence of **product thinking, data-system design, applied analytics, and AI-assisted decision-support architecture**, rather than as a claim of a fully deployed health-information system.
+
+---
+
+## Team
+
+**Neural Minds**
+
+- Emmanuel Ebiendele
+- Akanji Motunrayo
+- Olusola Adekunle Stephen
+
+---
+
+## My Contribution
+
+I contributed to the data and AI direction of the project, including the framing of the health-system problem, the data preparation / aggregation workflow, predictive-analytics concept, and development of the prototype experience that connects those insights to different user roles.
+
+The project reflects the kind of work I am most interested in: taking a messy real-world problem, structuring the data, designing the intelligence layer, and turning the result into something decision makers can interact with.
+
+---
+
+## Why This Project Matters
+
+The value of AI in health systems is not simply producing a prediction.
+
+The real challenge is getting the right information to the right person early enough for it to influence a decision.
+
+AfricareAI explores that idea across three levels of the PHC system:
+
+```text
+Facility → LGA → State
+```
+
+The goal is to make routine operational data more useful for planning, monitoring, and early response.
+
+---
+
+## Next Steps
+
+A production version would require:
+
+- secure, persistent health-data storage
+- authenticated multi-user access with strict role permissions
+- automated data ingestion and quality checks
+- properly trained, validated, and monitored forecasting models
+- documented evaluation metrics for every predictive module
+- audit trails and model-version tracking
+- privacy, security, and regulatory review appropriate for health data
+- pilot testing with PHC staff and government stakeholders
+
+---
+
+## Run Locally
+
+```bash
+git clone https://github.com/emmanuel-123tech/healthai.git
+cd healthai
+pnpm install
+pnpm dev
+```
+
+Then open:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Author / Contact
+
+**Emmanuel Ebiendele**  
+AI/ML Engineer & AI Product Builder
+
+- GitHub: https://github.com/emmanuel-123tech
+- LinkedIn: https://www.linkedin.com/in/emmanuel-ebiendele-063ba0255/
